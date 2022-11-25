@@ -36,7 +36,7 @@ jobs:
       run: ./gradlew clean build assembleRelease      
             
     - run: find . -name "*.apk"
-    - run: mv ./chat/build/outputs/apk/release/chat-release-unsigned.apk ./chat_android_v0.1.apk
+    - run: mv ./chat/build/outputs/apk/release/chat-release.apk ./chat_android_v0.1.apk
     - run: mv ./chat/build/outputs/apk/debug/chat-debug.apk ./chat_android_debug_v0.1.apk
     - run: find . -name "*.apk"
     
